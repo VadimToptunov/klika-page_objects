@@ -1,0 +1,104 @@
+...F.FF.FFF.FF.FF...F....
+======================================================================
+FAIL: test_divide_positive_on_negative (__main__.SimpleCalculusTests)
+Check if 20 / -4 = -5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 140, in test_divide_positive_on_negative
+    self.assertEquals(self.get_values(), "-5")
+AssertionError: u'16' != '-5'
+
+======================================================================
+FAIL: test_double_minus (__main__.SimpleCalculusTests)
+Check if 0.5 - 0.25 = 0.25
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 63, in test_double_minus
+    self.assertEquals(self.get_values(), "0.25")
+AssertionError: u'-0.25' != '0.25'
+
+======================================================================
+FAIL: test_double_multi (__main__.SimpleCalculusTests)
+Check if 0.5 * 0.5 = 0.25
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 70, in test_double_multi
+    self.assertEquals(self.get_values(), "0.25")
+AssertionError: u'0.125' != '0.25'
+
+======================================================================
+FAIL: test_get_negative (__main__.SimpleCalculusTests)
+Checks if 3 - 23 = -20
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 91, in test_get_negative
+    self.assertEquals(self.get_values(), "-20")
+AssertionError: u'-23' != '-20'
+
+======================================================================
+FAIL: test_get_negative_double (__main__.SimpleCalculusTests)
+Checks if 1,5 - 2 = -0,5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 105, in test_get_negative_double
+    self.assertEquals(self.get_values(), "-0.5")
+AssertionError: u'-2' != '-0.5'
+
+======================================================================
+FAIL: test_get_positive_from_negative (__main__.SimpleCalculusTests)
+Checks if (3 - 23) + 32 = 12
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 98, in test_get_positive_from_negative
+    self.assertEquals(self.get_values(), "12")
+AssertionError: u'3' != '12'
+
+======================================================================
+FAIL: test_insert_double (__main__.SimpleCalculusTests)
+Checks one can insert 0.123456789
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 49, in test_insert_double
+    self.assertEquals(self.get_values(), "0.123456789")
+AssertionError: u'0.12345670000000002' != '0.123456789'
+
+======================================================================
+FAIL: test_insert_negative (__main__.SimpleCalculusTests)
+Check one can insert a -6
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 84, in test_insert_negative
+    self.assertEquals(self.get_values(), "-6")
+AssertionError: u'6' != '-6'
+
+======================================================================
+FAIL: test_multiply_negatives (__main__.SimpleCalculusTests)
+Check if -5 * -4 = 20
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 147, in test_multiply_negatives
+    self.assertEquals(self.get_values(), "20")
+AssertionError: u'-9' != '20'
+
+======================================================================
+FAIL: test_negative_division (__main__.SimpleCalculusTests)
+Check if -20 / -5 = 4
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 126, in test_negative_division
+    self.assertEquals(self.get_values(), "4")
+AssertionError: u'-25' != '4'
+
+======================================================================
+FAIL: test_small_minus (__main__.SimpleCalculusTests)
+Checks if 5 - 2 = 3
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "calculus_tests.py", line 42, in test_small_minus
+    self.assertEquals(self.get_values(), "3")
+AssertionError: u'-2' != '3'
+
+----------------------------------------------------------------------
+Ran 25 tests in 320.519s
+
+FAILED (failures=11)
